@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from "react";
+
 export default function Actor(props){
     const [actor,setActor]=useState("")
     const[show,setShow]=useState("")
@@ -54,7 +55,7 @@ export default function Actor(props){
           </div>
           <div className="name">
             <h3>{item.show.name}</h3>
-            <button onClick={event =>  window.location.href=`${item.show.url}`}>Get Details</button>
+            <button style={{backgroundColor: "maroon"}} onClick={event =>  window.location.href=`${item.show.url}`}>Get Details</button>
           </div>
         </div>
       })} 

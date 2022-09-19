@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
+import { RiTvLine } from "react-icons/ri";
 import Actor from "./Actor"
 function App() {
   const[check,setCheck]=useState("")
@@ -8,7 +9,7 @@ function App() {
   
   return (
     <div className="App">
-    <h1>TV maze</h1>
+    <h1><RiTvLine /> TV maze</h1>
     <h2>Search your favorite shows</h2>
     
     <input type="radio" id="actor"  value={check} name="show" onClick={()=>setCheck("actor")}/>
